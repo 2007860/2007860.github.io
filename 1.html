@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        body {
+          font-family: "Lato", sans-serif;
+        }
+        
+        .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #f3d809;
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+        }
+        
+        .sidenav a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+        }
+        
+        .sidenav a:hover {
+          color: #d72424;
+        }
+        
+        .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+        
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!--email_off-->24f2007860@ds.study.iitm.ac.in<!--/email_off-->
+            <h1>Welcome to TECH ZONE</h1>
+            <nav>
+                <ul>
+                    <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                  </div>                      
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>     
+                    <script>
+                    function openNav() {
+                    document.getElementById("mySidenav").style.width = "250px";
+                    }
+                      
+                    function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                    }
+                    </script>
+                    <li style="float: right;"><a href="Log in .html">Log in</a></li>
+                    <li style="float: right;"><a href="sign up.html">sign up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Discover Our Latest Products</h2>
+            <p>Shop the latest trends and find your favorite items.</p>
+            <button>Shop Now</button>
+        </div>
+    </section>
+
+    <main>
+        <section class="products">
+            <div class="container">
+                <article class="product-item">
+                    <h2>Smart Phones</h2>
+                    <img src="a.jpg" alt="Mobiles"><br>
+                    <a href="mobile.html"><button>VIEW</button></a>
+                </article>
+
+                <article class="product-item">
+                    <h2>Smart Watches</h2>
+                    <img src="s1.jpg" alt="Watches"><br><br>
+                    <a href="watch.html"><button>VIEW</button></a>
+                </article>
+
+                <article class="product-item">
+                    <h2>Laptops</h2>
+                    <img src="n.jpg" alt="Laptops"><br>
+                    <a href="laptop.html"><button>VIEW</button></a>
+                </article>
+
+                <article class="product-item">
+                    <h2>Air buds</h2>
+                    <img src="ai.jpg" alt="Hear Phones"><br>
+                    <a href="buds.html"><button>VIEW</button></a>
+                </article>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <h2>What Our Customers Say</h2>
+                <blockquote>
+                    <p>"Amazing products and great customer service!"</p>
+                    <footer>— Jane Doe</footer>
+                </blockquote>
+
+                <blockquote>
+                    <p>"I've never been happier with an online purchase."</p>
+                    <footer>— John Smith</footer>
+                </blockquote>
+            </div>
+        </section>
+    </main>
+
+    <section class="newsletter">
+        <div class="container">
+            <h2>Subscribe to Our Newsletter</h2>
+            <form>
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 TECH WALKERS. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
